@@ -13,4 +13,6 @@ function sumUp(...numbers) {
   return result;
 }
 
-console.log(sumUp(1, 2, 5, 3, 3, 2, 8));
+const inputNumbers = [1, 2, 5, 3, 3, 2, 8];
+
+console.log(sumUp(...inputNumbers));
