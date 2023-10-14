@@ -4,7 +4,8 @@ function greeting(greetingPrefix, userName = "user") {
 greeting("Hi", "Mwima");
 greeting("Hello");
 
-function sumUp(numbers) {
+//the three dots wraps number in an array;
+function sumUp(...numbers) {
   let result = 0;
   for (const number of numbers) {
     result += number;
@@ -12,4 +13,4 @@ function sumUp(numbers) {
   return result;
 }
 
-console.log(sumUp([1, 2]));
+console.log(sumUp(1, 2, 5, 3, 3, 2, 8));
